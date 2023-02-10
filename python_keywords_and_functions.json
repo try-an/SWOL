@@ -1,0 +1,140 @@
+[
+    "and",
+    "as",
+    "assert",
+
+    "abs",
+    "aiter",
+    "all",
+    "any",
+    "anext",
+    "ascii",
+
+    "break",
+
+    "bin",
+    "bool",
+    "breakpoint",
+    "bytearray",
+    "bytes",
+
+    "class",
+    "continue",
+
+    "callable",
+    "chr",
+    "classmethod",
+    "compile",
+    "complex",
+
+    "def",
+    "del",
+
+    "delattr",
+    "dict",
+    "dir",
+    "divmod",
+
+    "elif",
+    "else",
+    "except",
+
+    "enumerate",
+    "eval",
+    "exec",
+
+    "False",
+    "finally",
+    "for",
+    "from",
+
+    "filter",
+    "float",
+    "format",
+    "frozenset",
+
+    "global",
+
+    "getattr",
+    "globals",
+
+    "hasattr",
+    "hash",
+    "help",
+    "hex",
+
+    "if",
+    "import",
+    "in",
+    "is",
+
+    "id",
+    "input",
+    "int",
+    "isinstance",
+    "issubclass",
+    "iter",
+
+    "lambda",
+
+    "len",
+    "list",
+    "locals",
+
+    "map",
+    "max",
+    "memoryview",
+    "min",
+
+    "None",
+    "nonlocal",
+    "not",
+
+    "next",
+
+    "or",
+
+    "object",
+    "oct",
+    "open",
+    "ord",
+
+    "pass",
+
+    "pow",
+    "print",
+    "property",
+
+    "raise",
+    "return",
+
+    "range",
+    "repr",
+    "reversed",
+    "round",
+
+    "set",
+    "setattr",
+    "slice",
+    "sorted",
+    "staticmethod",
+    "str",
+    "sum",
+    "super",
+
+    "True",
+    "try",
+
+    "tuple",
+    "type",
+
+    "vars",
+
+    "while",
+    "with",
+    "yield",
+
+    "zip",
+
+    "__import__"
+]
