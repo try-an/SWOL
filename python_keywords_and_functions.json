@@ -1,5 +1,4 @@
 [
-    "and",
     "as",
     "assert",
 
@@ -65,7 +64,6 @@
 
     "if",
     "import",
-    "in",
     "is",
 
     "id",
@@ -91,8 +89,6 @@
     "not",
 
     "next",
-
-    "or",
 
     "object",
     "oct",
@@ -135,6 +131,4 @@
     "yield",
 
     "zip",
-
-    "__import__"
 ]
