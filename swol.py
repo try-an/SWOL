@@ -1,3 +1,5 @@
+# by Ryan Tahenni
+#-------------------
 # The concept is simple:
 # First: we import the json files
 #           - tokens.json defines the SWOL tokens and their translation into python
