@@ -20,6 +20,7 @@
 # import modules
 from time import strftime, sleep
 
+print("SWOL by Ryan Tahenni")
 
 # choose mode
 run_mode = input("Select mode: run/compile >> ")
@@ -159,7 +160,7 @@ for token in code_tokens:
                 has_python_function_or_keyword = False
 
         if has_python_function_or_keyword:
-            print(f"Error: Your script contains a python keyword of function at: '{token}'")
+            raise SyntaxError(f"Your script contains a python keyword of function at: '{token}'")
             python_code = "".join(python_code)
             break
         else:
@@ -182,7 +183,7 @@ print(python_code+"\n")
 
 if has_forbidden_functions == False:
     if has_multiple_lines:
-        print("Error: script must contain one line")
+        raise EOFError("Script must contain one line")
     else:
         if run_mode == "run":
             exec(python_code)
@@ -191,9 +192,9 @@ if has_forbidden_functions == False:
             with open(f"compiled/{current_date}.py", "x") as compiled_file:
                 compiled_file.write(python_code)
         else:
-            print("Error: Mode must be 'run' or 'compile'")
+            raise NameError("Mode must be 'run' or 'compile'")
 else:
-    print("Error: Final script contains forbidden functions")
+    raise SyntaxError("Final script contains forbidden functions")
 
 sleep(0.5)
 print("Program will end in 5 secs")
