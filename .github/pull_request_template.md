@@ -13,3 +13,11 @@ Explain why you did it
 ### Notes:
 
 Add additionnal informaion here
+
+## Important:
+
+- [ ] I didn't add or delete features in a destructive way
+
+- [ ] I verified and tested if the program worked
+
+- [ ] The modifications are easy to understand and well documented
