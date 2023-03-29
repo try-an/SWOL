@@ -160,7 +160,6 @@ for token in code_tokens:
                 has_python_function_or_keyword = False
 
         if has_python_function_or_keyword:
-            python_code = "".join(python_code)
             raise SyntaxError(f"Your script contains a python keyword of function at: '{token}'")
         else:
             python_code[python_code.index(TOKENS.get(token))] = token
