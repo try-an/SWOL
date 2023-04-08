@@ -4,7 +4,7 @@
 S.W.O.L. is a very buggy esolang built on top of python. It stands for: Slow Weird One Line (for the language) or Script With One Line (for the file format (.swol)). One perk is that SWOL scripts are written in only one line and you have to seperate everything (functions, strings etc...) with underscores. Another thing is that SWOL is compiled differently by translating directly it's tokens to python and then executing that python code.
 
 -----------------
-To use this language:
+**To use this language:**
   1. Download python ([https://www.python.org/downloads/](https://www.python.org/downloads/))
   2. Download the repo
   3. Create a file that ends in .swol with any editor (eg. Notepad)
@@ -13,8 +13,8 @@ To use this language:
   6. If everything worked, it sould print the python version and run the script
 
 -----------------
-Coming soon...(?):
-  - A REPL(1)
+**Coming soon...(?):**
+  - A REPL (1)
   - A module for translating SWOL to python
 
 
