@@ -1,4 +1,4 @@
-# by Ryan Tahenni
+# by Tryan09
 #-------------------
 # The concept is really simple:
 # First: load the dicts and the lists
