@@ -1,7 +1,11 @@
 # SWOL
 
 ------------------
-S.W.O.L. is a very buggy esolang built on top of python. It stands for: Slow Weird One Line (for the language) or Script With One Line (for the file format (.swol)). One perk is that SWOL scripts are written in only one line and you have to seperate everything (functions, strings etc...) with underscores. Another thing is that SWOL is compiled differently by translating directly it's tokens to python and then executing that python code.
+S.W.O.L. is a very buggy esolang built on top of python. It stands for: Slow Weird One Line (for the language) or Script With One Line (for the file format (.swol)).
+
+One perk is that SWOL scripts are written in only one line and you have to seperate everything (functions, strings etc...) with underscores.
+
+Another thing is that SWOL is compiled differently by translating directly it's tokens to python.
 
 -----------------
 **To use this language:**
