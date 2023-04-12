@@ -1,4 +1,3 @@
-
 # by Tryan09
 # -------------------
 # The concept is really simple:
@@ -204,9 +203,9 @@ class SWOL:
         return "".join(translated_code)
 
 if __name__ == "__main__":
-    swol = SWOL()
+    __swol = SWOL()
 
-    hello_world = swol.compile_to_py('P_(_"Hello World"_)')
-    greatest_common_divisor = swol.compile_to_py('P_(_"GCD"_)_;_a_=_i_(_I_(_"a = "_)_)_;_b_=_i_(_I_(_"b = "_)_)_;_W_b_!=_0_:_;_}_IF_a_>_b_:_;_}_}_a_=_a_-_b_;_}_ELS_:_;_}_}_b_=_b_-_a_;_P_(_a_)_;')
+    __hello_world = __swol.compile_to_py('P_(_"Hello World"_)')
+    __greatest_common_divisor = __swol.compile_to_py('P_(_"GCD"_)_;_a_=_i_(_I_(_"a = "_)_)_;_b_=_i_(_I_(_"b = "_)_)_;_W_b_!=_0_:_;_}_IF_a_>_b_:_;_}_}_a_=_a_-_b_;_}_ELS_:_;_}_}_b_=_b_-_a_;_P_(_a_)_;')
 
-    print(f"{hello_world}\n\n{greatest_common_divisor}")
+    print(f"{__hello_world}\n\n{__greatest_common_divisor}")
