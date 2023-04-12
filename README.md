@@ -17,8 +17,8 @@ Another thing is that SWOL is compiled differently by translating directly it's 
   6. If everything worked, it sould print the python version and run the script
 
 -----------------
-**Coming soon...(?):**
-  - [ ] A REPL (1)
+**In the next version:**
+  - [x] A REPL (1)
   - [x] A module for translating SWOL to python
 
 
