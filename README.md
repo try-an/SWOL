@@ -18,8 +18,8 @@ Another thing is that SWOL is compiled differently by translating directly it's 
 
 -----------------
 **Coming soon...(?):**
-  - A REPL (1)
-  - A module for translating SWOL to python
+  - [ ] A REPL (1)
+  - [x] A module for translating SWOL to python
 
 
 (1): read-eval-print-loop
