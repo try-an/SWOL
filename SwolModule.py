@@ -1,3 +1,22 @@
+
+# by Tryan09
+# -------------------
+# The concept is really simple:
+# First: load the dicts and the lists
+#           - TOKENS defines the SWOL tokens and their translation into python
+#           - FORBIDDEN_TOKENS is meant for scanning the script
+#              made in SWOL for python functions beacause we dont want a swol script
+#              containing python functions
+#           - FORBIDDEN_FUNCTIONS is meant for scanning the final python
+#              script for forbidden functions for a similar reason as FORBIDDEN_TOKENS:
+#              we don't want our swol script executing extra python functions
+# Second: with the TOKENS dict, we "translate" our swol script to python
+#           - Add swol token translation to final python script
+#           - Resolve tokens that were not translated (see line 152 to 166)
+#           - Scan if there are python keywords inside the swol script with FORBIDDEN_TOKENS
+# Third: we do a final scan for forbidden functions with FORBIDDEN_FUNCTIONS
+# Four: we execute or compile the script based on the "run_mode variable"
+
 class SWOL:
     """# SWOL compiler
 
