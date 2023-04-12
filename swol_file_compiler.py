@@ -20,7 +20,7 @@
 # import modules
 from time import strftime, sleep
 
-print("SWOL by Ryan Tahenni")
+print("SWOL by Tryan09")
 
 # choose mode
 run_mode = input("Select mode: run/compile >> ")
