@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Importing the SWOL module</title>
+</head>
+<body>
+    <h1>Importing the SWOL module</h1>
+    <p>Are you looking to use SwolModule to compile your scripts easily ? Well this is the perfect tutorial for you !</p>
+    <hr>
+    <img src="logos/SWOL Logo.svg" alt="logo of SWOL">
+    <h2>Step 1: Getting the module</h2>
+    <p>
+        Right now, the only way to get the SWOL module is to download the <a href="https://github.com/TRyan09/SWOL">SWOL repository</a>.
+        <br>
+        Here, you will find a file called SwolModule.py. This is the module that we're looking for.</p>
+    <hr>
+    <h2>Step 2: Importing</h2>
+    <p>
+        Create a new file. Name it however you want.
+        <br>
+        It's recommended to import SWOL like in the snippet below.
+        <br>
+        Finally, we want to create an instance of the SWOL object, it's absolutely necessary to do this since the constructor of the SWOL object creates the 3 attributes necessary to compile your SWOL script to python.
+    </p>
+    <div class="code-snippet">
+        <code>
+            <span style="color: rgb(177, 132, 222);">from </span>
+            <span style="color: rgb(95, 222, 152);">SwolModule </span>
+            <span style="color: rgb(177, 132, 222);">import </span>
+            <span style="color: rgb(89, 224, 172);">SWOL </span>
+            <br>
+            <span style="color: rgb(132, 222, 222);">swol</span>
+            <span style="color: rgb(255, 255, 255);"> = </span>
+            <span style="color: rgb(89, 224, 172);">SWOL<span style="color: rgb(223, 218, 70);">()</span></span>
+        </code>
+    </div>
+    <hr>
+    <h2>Step 3: Compiling</h2>
+    <p>
+        Finally, to compile the swol script. You have to use the <code>compile_to_py()</code> method.
+        <br>
+        The method will return a string. That is the compiled python code. With that you can (for example) execute it
+    </p>
+    <div class="code-snippet">
+        <code>
+            <span style="color: rgb(177, 132, 222);">from </span>
+            <span style="color: rgb(95, 222, 152);">SwolModule </span>
+            <span style="color: rgb(177, 132, 222);">import </span>
+            <span style="color: rgb(89, 224, 172);">SWOL </span>
+            <br>
+            <span style="color: rgb(132, 222, 222);">swol</span>
+            <span style="color: rgb(255, 255, 255);"> = </span>
+            <span style="color: rgb(89, 224, 172);">SWOL<span style="color: rgb(223, 218, 70);">()</span></span>
+            <br>
+            <span style="color: rgb(132, 222, 222);">python_code</span>
+            <span style="color: rgb(255, 255, 255);"> = </span>
+            <span style="color: rgb(132, 222, 222);">swol<span style="color: rgb(255, 255, 255);">.</span><span style="color: rgb(221, 216, 66);">compile_to_py<span style="color: rgb(223, 218, 70);">()</span></span></span>
+            <br>
+            </span><span style="color: rgb(221, 216, 66);">exec<span style="color: rgb(223, 218, 70);">(</span><span style="color: rgb(132, 222, 222);">python_code</span><span style="color: rgb(223, 218, 70);">)</span></span></span>
+        </code>
+    </div>
+</body>
+</html>
