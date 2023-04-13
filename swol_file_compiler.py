@@ -1,14 +1,16 @@
-# import modules
+import argparse
 from SwolModule import SWOL
 from time import strftime, sleep
 
-print("SWOL by Tryan09")
+parser = argparse.ArgumentParser()
+parser.add_argument("-c", "--compile", action="store_true", help="Compile the script to a python file (will be stored in the compiled directory)")
+parser.add_argument("filepath", help="File path to your script")
+args = parser.parse_args()
 
-# choose mode
-run_mode = input("Select mode: run/compile >> ")
+print("SWOL by Tryan09\n")
 
-# getting swol file path
-script_path = input("Put the path to the script that you want to run or compile >> ")
+is_compiled = args.compile
+script_path = args.filepath
 
 swol = SWOL()
 
@@ -17,17 +19,14 @@ with open(script_path, "r") as script_content:
 
 python_code = swol.compile_to_py(swol_script)
 
-# execute or compile
 print(python_code+"\n")
 
-if run_mode == "run":
-    exec(python_code)
-elif run_mode == "compile":
+if is_compiled:
     current_date = strftime("%d-%m-%Y-%H-%M-%S")
     with open(f"compiled/{current_date}.py", "x") as compiled_file:
         compiled_file.write(python_code)
 else:
-    raise NameError("Mode must be 'run' or 'compile'")
+    exec(python_code)
 
 sleep(0.5)
 print("Program will end in 5 secs")
