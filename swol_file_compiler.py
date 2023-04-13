@@ -1,3 +1,5 @@
+# command: python swol_file_compiler.py [-c] filepath
+
 import argparse
 from SwolModule import SWOL
 from time import strftime, sleep
