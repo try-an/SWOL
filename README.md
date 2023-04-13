@@ -13,8 +13,10 @@ Another thing is that SWOL is compiled differently by translating directly it's 
   2. Download the repo
   3. Create a file that ends in .swol with any editor (eg. Notepad)
   4. Try a script like this: `a_=_I_(_"What's your name? "_)_;_P_(_"Hello, "_+_a_)`
-  5. Run swol_file_compiler.py, set the mode to run, type the path to the file
+  5. On the repo folder, type this command `python swol_file_compiler.py ` + the path to the swol file
   6. If everything worked, it sould print the python version and run the script
+  
+  For more help, visit [the documentation](https://tryan09.github.io/SWOL)
 
 -----------------
 **In the next version:**
