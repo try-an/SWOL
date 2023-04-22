@@ -186,20 +186,23 @@ class SWOL:
                 continue
         return False
 
-    def __translate_to_python(self, tokens: list):
+    def __translate_to_python(self, tokens: list[str]):
         translated_code = []
-        current_index = 0
         for token in tokens:
-            direct_translation = self.TOKENS.get(token)
-            translated_code.append(direct_translation)
 
-            if translated_code[current_index] == None:
+            direct_translation = self.TOKENS.get(token)
+
+            if direct_translation is None:
                 has_python_function_or_keyword = self.__code_has_python_func_or_keyword(token)
+
                 if has_python_function_or_keyword:
                     raise SyntaxError(f"Your script contains a python keyword of function at: '{token}'")
                 else:
-                    translated_code[current_index] = token
-            current_index += 1
+                    translated_code.append(token)
+
+            else:
+                translated_code.append(direct_translation)
+
         return "".join(translated_code)
 
 if __name__ == "__main__":
