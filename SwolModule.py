@@ -191,15 +191,13 @@ class SWOL:
         for token in tokens:
 
             direct_translation = self.TOKENS.get(token)
+            has_python_function_or_keyword = self.__code_has_python_func_or_keyword(token)
 
+            if has_python_function_or_keyword:
+                raise SyntaxError(f"Your script contains a python keyword of function at: '{token}'")
+            
             if direct_translation is None:
-                has_python_function_or_keyword = self.__code_has_python_func_or_keyword(token)
-
-                if has_python_function_or_keyword:
-                    raise SyntaxError(f"Your script contains a python keyword of function at: '{token}'")
-                else:
-                    translated_code.append(token)
-
+                translated_code.append(token)
             else:
                 translated_code.append(direct_translation)
 
