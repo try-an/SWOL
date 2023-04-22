@@ -36,4 +36,4 @@ Another thing is that SWOL is compiled differently by translating directly it's 
   For more help, visit [the documentation](https://tryan09.github.io/SWOL)
 
 -----------------
-*Current version: 1.5.1*
+*Current version: 1.5.2*
