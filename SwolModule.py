@@ -23,7 +23,7 @@ class SWOL:
 
         ## Description:
 
-            SWOL is an esoteric programming language that (in my (the creator's) opinion) is probably the most readable
+            SWOL is an esoteric programming language that (in my (the creator's) opinion) is probably the most readable esolang out there
 
             Everything (functions, strings etc..) is seperated by underscores
 
@@ -144,23 +144,19 @@ class SWOL:
                                     'zip']
 
     def compile_to_py(self, SWOL_script: str):
-        
-
         code_tokens = SWOL_script.split("_")
 
         has_multiple_lines = self.__code_has_multiple_lines(code_tokens)
+        if has_multiple_lines:
+            raise EOFError("Script must contain one line")
 
         python_code = self.__translate_to_python(code_tokens)
 
         has_forbidden_functions = self.__code_has_forbidden_functions(python_code)
-
-        if has_forbidden_functions == False:
-            if has_multiple_lines:
-                raise EOFError("Script must contain one line")
-            else:
-                return python_code
-        else:
+        if has_forbidden_functions:
             raise SyntaxError("Final script contains forbidden functions")
+
+        return python_code
 
     def __code_has_multiple_lines(self, tokens: list):
         for token in tokens:
