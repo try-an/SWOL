@@ -11,7 +11,7 @@
 #              we don't want our swol script executing extra python functions
 # Second: with the TOKENS dict, we "translate" our swol script to python
 #           - Add swol token translation to final python script
-#           - Resolve tokens that were not translated (see line 152 to 166)
+#           - Resolve tokens that were not translated
 #           - Scan if there are python keywords inside the swol script with FORBIDDEN_TOKENS
 # Third: we do a final scan for forbidden functions with FORBIDDEN_FUNCTIONS
 # Four: we execute or compile the script based on the "run_mode variable"
