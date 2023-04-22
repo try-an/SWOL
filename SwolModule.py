@@ -162,24 +162,21 @@ class SWOL:
         for token in tokens:
             if "\n" in token:
                 return True
-            else:
-                continue
+            continue
         return False
     
     def __code_has_forbidden_functions(self, python_code):
         for element in self.FORBIDDEN_FUNCTIONS:
             if element in python_code:
                 return True
-            else:
-                continue
+            continue
         return False
 
     def __code_has_python_func_or_keyword(self, token):
         for element in self.FORBIDDEN_TOKENS:
             if element in token:
                 return True
-            else:
-                continue
+            continue
         return False
 
     def __translate_to_python(self, tokens: list[str]):
